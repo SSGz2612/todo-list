@@ -1,0 +1,72 @@
+.Cm_A {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.Cm_A1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.Cm_A1 a {
+    text-decoration: none;
+    color: #232933;
+}
+
+.Cm_A2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DDDDDD;
+    width: 100%;
+    height: 50px;
+}
+
+.Cm_B {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #BBBBBB;
+    padding: 10px;
+    margin: 0px 0px 5px 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.Cm_B Form {
+    display: flex;
+}
+
+.Cm_Bad {
+    color: #990000;
+}
+
+.Cm_C {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.task {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    align-items: center;
+    background-color: #EEEEEE;
+    width: 100%;
+    height: 50px;
+    margin: 5px;
+    border-radius: 3px;
+}
+
+.task1 { padding: 10px; }
+.task2 { padding: 10px; }
+.task3 { padding: 10px; }
