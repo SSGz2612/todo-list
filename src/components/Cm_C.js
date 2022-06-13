@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import '../StyleCms.css';
+// react-icons
+import { IoIosCloseCircleOutline } from "react-icons/io";
+import { BiEdit } from "react-icons/bi";
+import { AiOutlineSave } from "react-icons/ai";
 
 function Cm_C( props ) {
     const [ modoEdit, setModoEdit ] = useState( false );
@@ -28,14 +32,18 @@ function Cm_C( props ) {
         <div>{
             !modoEdit ?
                 <div className="task">
-                    <span className="task1">{ props.Cm_C }</span>
-                    <span className="task2" onClick={ edit }>Edit</span>
-                    <span className="task3" onClick={ deletTask }>Delete</span>
+                    <div className="task1">{ props.Cm_C }</div>
+                    <div className="task2" onClick={ edit }><BiEdit /></div>
+                    <div className="task3" onClick={ deletTask }><IoIosCloseCircleOutline /></div>
                 </div>
                 :
                 <form className="formEdit" onSubmit={ submitEdit }>
-                    <input value={ editText } onChange={ managEdit }/>
-                    <button>Guardar</button>
+                    <input
+                        value={ editText }
+                        onChange={ managEdit }
+                        placeholder="Edit your task..."
+                    />
+                    <button><AiOutlineSave /></button>
                 </form>
             }
         </div>

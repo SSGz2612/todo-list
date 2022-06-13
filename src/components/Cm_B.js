@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import '../StyleCms.css';
+// react-icons
+import { AiOutlineSave } from "react-icons/ai";
 
 function Cm_B( props ) {
     const [ entryUser, setEntryUser ] = useState('');
@@ -27,9 +29,10 @@ function Cm_B( props ) {
                     type='text'
                     value={ entryUser }
                     onChange={ ctrlUser }
+                    placeholder="Add a new task..."
                 />
 
-                <button> + </button>
+                <button><AiOutlineSave /></button>
             </form>
             { !validation && <div className='Cm_Bad'>add a new task please</div> }
         </div>

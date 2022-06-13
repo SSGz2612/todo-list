@@ -28,7 +28,7 @@ function App() {
   }
   
   return (
-    <div>
+    <div className='container'>
       <Cm_A />
       <Cm_B takeTask={ takeTask }/>
 

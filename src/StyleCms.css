@@ -1,6 +1,13 @@
-.Cm_A {
+.container {
     display: flex;
     flex-direction: column;
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+
+.Cm_A {
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -24,7 +31,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #DDDDDD;
     width: 100%;
     height: 50px;
 }
@@ -34,19 +40,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #BBBBBB;
-    padding: 10px;
+    background-color: #555555;
     margin: 0px 0px 5px 0px;
     width: 100%;
-    height: 100%;
+    height: 70px;
 }
 
 .Cm_B Form {
     display: flex;
+    align-items: center;
 }
 
 .Cm_Bad {
-    color: #990000;
+    color: #DDDDDD;
 }
 
 .Cm_C {
@@ -67,6 +73,41 @@
     border-radius: 3px;
 }
 
-.task1 { padding: 10px; }
-.task2 { padding: 10px; }
-.task3 { padding: 10px; }
+.task1 {
+    display: flex;
+    padding: 10px;
+}
+.task2 {
+    display: flex;
+    padding: 10px;
+}
+.task3 {
+    display: flex;
+    padding: 10px;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #BBBBBB;
+    border-radius: 3px;
+}
+
+form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.formEdit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 70px;
+}
